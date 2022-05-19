@@ -26,6 +26,11 @@
           }
         }
       </script>
+      <style type="text/tailwindcss">
+        .kafelek {
+            @apply w-[250px] h-[250px] bg-white rounded-lg shadow-xl mx-3 mt-10 min-w-[250-px] min-h-[250-px] md:mx-8;
+        }
+    </style>
 </head>
 <body>
     <section class="h-[300px] bg-[#F4EDED] flex justify-between">
@@ -64,6 +69,69 @@
         </div>
         
     </section>
+    
+    <!-- POZOSTAŁE SERWISY -->
+    <div class="font-inter bg-[#F4EDED] pb-5" >
+        <div class=" flex h-auto w-full justify-evenly ">
+            <div class="bg-lblack h-px w-60 xl:w-80 my-auto rounded invisible sm:w-40 sm:visible"></div>
+            <p class="text-2xl text-lblack min-w-[210px]">Pozostałe Serwisy</p>
+            <div class="bg-lblack h-px w-60 xl:w-80 my-auto rounded invisible sm:w-40 sm:visible"></div>
+        </div>
+
+        <!-- KAFELKI -->
+
+        <div class="md:mx-10 justify-evenly flex flex-wrap sm:px-5">
+            <button class="kafelek" onclick=" window.open('https://odpylamy.pl/','_blank')">
+                <img src="img/pf.svg" class="w-[120px] mx-auto mt-8">
+                <div class="mt-6 w-clip mx-5 text-center">
+                    <span>Platforma Filtracyjna</span>
+                </div>
+            </button>
+            <button class="kafelek" onclick=" window.open('http://www.xiris.pl/','_blank')">
+                <img src="img/xiris.png" class="m-auto">
+                <div class="w-clip mx-5 text-center">
+                    <span>Kamery Spawalnicze</span>
+                </div>
+            </button>
+            <button class="kafelek" onclick=" window.open('http://www.gullco.pl/','_blank')">
+                <img src="img/gullco.png" class="mx-auto">
+                <div class="w-clip mx-5 text-center">
+                    <span>Systemy do spawania zautomatyzowanego</span>
+                </div>
+            </button>
+            <button class="kafelek" onclick=" window.open('http://www.podnoszenie.eu/','_blank')">
+                <img src="img/podnoszenie.png" class="mx-auto">
+                <div class="w-clip mx-5 text-center">
+                    <span>Systemy transportu
+                        bliskiego</span>
+                </div>
+            </button>
+            <button class="kafelek" onclick=" window.open('http://www.elkrem.com.pl/','_blank')">
+                <img src="img/elkrem.png" class="mx-auto ">
+                <div class="w-clip mx-auto text-center">
+                    <span>Układy plastyfikujące oraz obróbka CNC</span>
+                </div>
+            </button>
+            <button class="kafelek" onclick=" window.open('https://www.matyergonomiczne.pl/','_blank')">
+                <img src="img/wearwell.png" class="mx-auto">
+                <div class="w-clip mx-5 text-center">
+                    <span>Platforma Filtracyjna</span>
+                </div>
+            </button>
+            <button class="kafelek" onclick=" window.open('https://szlifowanie.info/','_blank')">
+                <img src="img/suhner.png" class="mx-auto">
+                <div class="w-clip mx-5 text-center">
+                    <span>Platforma Filtracyjna</span>
+                </div>
+            </button>
+            <button class="kafelek" onclick=" window.open('http://www.readytorobot.eu/','_blank')">
+                <img src="img/interator.png" class="mx-auto w-180 mt-[50px] ">
+                <div class="mt-[50px] w-clip mx-5 text-center">
+                    <span>Platforma Filtracyjna</span>
+                </div>
+            </button>
+        </div>
+    </div>
 
     <footer class="bg-lblack h-80 ">
         <div class="flex invisible sm:visible"> 
