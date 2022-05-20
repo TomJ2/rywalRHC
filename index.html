@@ -21,7 +21,7 @@
       <style type="text/tailwindcss">
         .kafelek {
             @apply w-[250px] h-[250px] bg-white rounded-lg shadow-xl mx-3 mt-10 min-w-[250-px] min-h-[250-px] md:mx-8 transition ease-in-out duration-500 hover:-translate-y-1 hover:scale-110;
-        }`
+        }
     </style>
 </head>
 <body>
@@ -32,7 +32,6 @@
             <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-24 text-white transform translate-x-1/2" fill="#F4EDED" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
               <polygon points="50,0 100,0 50,100 0,100" />
             </svg>
-      dupa
             <div>
               <div class="relative pt-6 px-4 sm:px-6 lg:px-8"></div>
               <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"></div>
@@ -86,13 +85,20 @@
     </section>
 
     <div class="bg-fixed h-[300px]" style="background-image: url(/img/welder.jpg)"></div>
-    <section class="bg-[#F4EDED] flex h-[500px] justify-between">
-        <div class="pl-[100px] pt-[30px]">
-            <img src="img/img2.svg" alt="" class="">
+    <section class="bg-[#F4EDED] flex justify-between flex-wrap  ">
+        <div class=" m-auto min-h-[250px] md:w-1/2 mt-[15px]">
+            <img src="img/img2.svg" alt="" class="m-auto">
         </div>
-        <div class="w-1/2 pr-[100px] pt-[60px]">
-            <h1 class="text-xl text-center pb-[10px] text-[#4267B2]">EN ISO 9001:2015 / EN ISO 14001:2015</h1>
-            <p class="text-sm">
+        <div class="mx-auto mt-[60px] min-h-[450px] md:w-1/2">
+            <div class=" flex flex-wrap h-auto w-full justify-evenly">
+                <div class="bg-[#4267B2] h-px w-0 sm:w-10 xl:w-20 mx-0 xl:mx-2 my-auto rounded invisible sm:visible "></div>
+                <div>
+                    <p class="text-xl text-[#4267B2] mx-auto min-w-[140px] text-center">EN ISO 9001:2015</p>
+                    <p class="text-xl text-[#4267B2] mx-auto min-w-[140px] text-center">EN ISO 14001:2015y</p>
+                </div>
+                <div class="bg-[#4267B2] h-px w-0 sm:w-10 xl:w-20 mx-0 xl:mx-2 my-auto rounded invisible sm:visible "></div>
+            </div>
+            <p class="text-sm mt-10 mx-auto px-4">
                 <span class="flex mb-2">
                 Misją firmy „RYWAL – RHC” jest osiągnięcie pełnej satysfakcji Klienta poprzez specjalizowanie się w kompleksowej usłudze sprzedaży w całym obszarze procesów, w których ma miejsce łączenie i cięcie materiałów przy pomocy ciepła.
                 </span>
@@ -100,12 +106,11 @@
                 Zarząd „RYWAL – RHC” będąc świadomy oddziaływania Spółki na środowisko podjął zobowiązanie do ciągłego i planowanego zmniejszenia negatywnego wpływu na środowisko. Obejmuje to zapobieganie zanieczyszczeniom i spełnianie mających zastosowanie wymagań przepisów prawnych i innych wymagań dotyczących Spółki, do których się zobowiązała i które dotyczą jej aspektów środowiskowych.
                 </span>
                 <span class="flex mb-2">
-                Dążąc do utrzymania i pogłębiania zdobytego zaufania klientów, Zarząd zobowiązuje się do stałego podnoszenia jakości wyrobów i dbania o stan środowiska naturalnego, przy uwzględnieniu potrzeb i oczekiwań innych zainteresowanych stron przy jednoczesnym spełnieniu wymagań prawnych i norm. 
+                Dążąc do utrzymania i pogłębiania zdobytego zaufania klientów, Zarząd zobowiązuje się do stałego podnoszenia jakości wyrobów i dbania o stan środowiska naturalnego, przy uwzględnieniu potrzeb i oczekiwań innych zainteresowanych stron przy jednoczesnym spełnieniu wymagań prawnych i norm.
                 </span>
-                <a href=""><span class="text-[#4267B2]">Czytaj więcej ...</span></a>
+                <a href="https://www.rywal.com.pl/zintegrowany-system-zarz%C4%85dzania.html"><span class="text-[#4267B2]">Czytaj więcej ...</span></a>
             </p>
         </div>
-        
     </section>
     
     <!-- POZOSTAŁE SERWISY -->
@@ -173,38 +178,38 @@
 
     <footer class="bg-[#585755] h-80 ">
         <div class="flex"> 
-            <div class="mr-16 ml-20">
-                <h1 class="text-xl mt-7 mb-3 font-thin text-[#F4EDED]">INFORMACJE</h1>
-                <ul>
-                    <li class="font-thin  text-[#F4EDED] text-sm my-0.5">Grupa Rywal-RHC</li>
-                    <li class="font-thin  text-[#F4EDED] text-sm my-0.5">Partnerzy</li>
-                    <li class="font-thin  text-[#F4EDED] text-sm my-0.5">Dane Rejestrowe</li>
-                    <li class="font-thin  text-[#F4EDED] text-sm my-0.5">Polityka Prywatności</li>
-                    <li class="font-thin  text-[#F4EDED] text-sm my-0.5">Polityka Cookies</li>
-                    <li class="font-thin  text-[#F4EDED] text-sm my-0.5">Nota Prawna</li>
-                    <li class="font-thin  text-[#F4EDED] text-sm my-0.5">Informacje Dla Gości</li>
-                    <li class="font-thin  text-[#F4EDED] text-sm my-0.5">Kontakt</li>
-                    <li class="font-thin  text-[#F4EDED] text-sm my-0.5">Strategia Podatkowa<br>Rywal-RHC</li>
+            <div class="mx-auto">
+                <h1 class="text-xl my-5 font-thin text-[#F4EDED]">INFORMACJE</h1>
+                <ul class="font-thin flex flex-col gap-y-1 text-[#F4EDED] text-sm">
+                    <a href="#"><li>Grupa Rywal-RHC</li></a>
+                    <a href="#"><li>Partnerzy</li></a>
+                    <a href="#"><li>Dane Rejestrowe</li></a>
+                    <a href="#"><li>Polityka Prywatności</li></a>
+                    <a href="#"><li>Polityka Cookies</li></a>
+                    <a href="#"><li>Nota Prawna</li></a>
+                    <a href="#"><li>Informacje Dla Gości</li></a>
+                    <a href="#"><li>Kontakt</li></a>
+                    <a href="#"><li>Strategia Podatkowa<br>Rywal-RHC</li></a>
                 </ul>
             </div>
             <div class="pt-8">
                 <div class="bg-[#F4EDED] w-px h-64"><hr></div>
             </div>
-            <div class="mr-16 ml-20">
+            <div class="mx-16">
                 <div>
                     <h1 class="text-xl mt-7 mb-3 font-thin text-[#F4EDED] tracking-wide font-inter">SKRÓTY</h1>
-                    <ul>
-                        <li class="font-thin  text-[#F4EDED] text-sm my-0.5">Promocje</li>
-                        <li class="font-thin  text-[#F4EDED] text-sm my-0.5">Okazje Cenowe</li>
-                        <li class="font-thin  text-[#F4EDED] text-sm my-0.5">Dzierżawa Urządzeń</li>
-                        <li class="font-thin  text-[#F4EDED] text-sm my-0.5">Serwis</li>
-                        <li class="font-thin  text-[#F4EDED] text-sm my-0.5">Produkty MOST</li>
-                        <li class="font-thin  text-[#F4EDED] text-sm my-0.5">FAQ</li>
-                        <li class="font-thin  text-[#F4EDED] text-sm my-0.5">Mapa Strony</li>
+                    <ul class="font-thin  text-[#F4EDED] text-sm my-0.5">
+                        <a href="#"><li>Promocje</li></a>
+                        <a href="#"><li>Okazje Cenowe</li></a>
+                        <a href="#"><li>Dzierżawa Urządzeń</li></a>
+                        <a href="#"><li>Serwis</li></a>
+                        <a href="#"><li>Produkty MOST</li></a>
+                        <a href="#"><li>FAQ</li></a>
+                        <a href="#"><li>Mapa Strony</li></a>
                     </ul>
                 </div>
             </div>
-            <div class="mt-24 ml-6">
+            <div class="my-24">
                 <form>
                     <input type="email" placeholder="Wpisz swój e-mail" class="border-x border-y border-[#F4EDED] rounded-md py-3 pr-32 pl-5 bg-transparent">
                     <button type="submit" class="border-x border-y rounded-md py-3 w-32 bg-[#F4EDED] ml-1 transition hover:bg-[#D2C9C9] hover:border-[#9F9E9E]">DOŁĄCZ</button><br />
@@ -217,10 +222,10 @@
             </div>
             <div class="w-[380px] h-80">
                 <img src="img/image.svg" alt="" class="w-[180px] h-[180px] m-10 ml-24">
-                <div class="flex justify-evenly ml-[-20px] px-16 leading-3">
-                    <a href="https://www.youtube.com/user/rywalrhc" ><img src="img/youtube.png" alt="" class="w-[20px]"></a>
-                    <a href="https://www.youtube.com/user/rywalrhc" ><img src="img/instagram.png" alt="" class="w-[20px]"></a>
-                    <a href="https://www.youtube.com/user/rywalrhc" ><img src="img/facebook.png" alt="" class="w-[20px]"></a>
+                <div class="flex items-center gap-2 ml-[-20px] px-16 leading-3">
+                    <a href="https://www.youtube.com/user/rywalrhc"><img src="img/youtube.png" alt="" class="w-[20px] h-[20] my-auto"></a>
+                    <a href="https://www.youtube.com/user/rywalrhc"><img src="img/instagram.png" alt="" class="w-[20px] h-[20] my-auto"></a>
+                    <a href="https://www.youtube.com/user/rywalrhc"><img src="img/facebook.png" alt="" class="w-[20px] h-[20] my-auto"></a>
                     <span class="text-[#F4EDED]">@ Rywal_RHC</span>
                 </div>
             </div>
