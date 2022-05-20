@@ -20,28 +20,64 @@
       </script>
       <style type="text/tailwindcss">
         .kafelek {
-            @apply w-[250px] h-[250px] bg-white rounded-lg shadow-xl mx-3 mt-10 min-w-[250-px] min-h-[250-px] md:mx-8 transition ease-in-out duration-500 hover:-translate-y-1 hover:scale-110;
+            @apply w-[100px] sm:w-[150px] lg:w-[200px] xl:w-[250px] h-[100px] sm:h-[150px] lg:h-[200px] xl:h-[250px] bg-white rounded-lg shadow-xl mx-1 sm:mx-3 mt-10 min-w-[250-px] min-h-[250-px] md:mx-6 lg:mx-7 xl:mx-8 transition ease-in-out duration-500 hover:-translate-y-1 hover:scale-110;
         }
+        footer {
+            @apply bg-[#585755] flex flex-col lg:flex-row   gap-y-10 py-5 justify-center;
+        }
+        footer .footer-content-container {
+            @apply lg:w-10/12 mx-auto justify-center flex flex-col lg:flex-row lg:gap-x-[150px]
+        }
+        footer .info-section {
+            @apply flex justify-center gap-x-[80px];
+        }
+        footer .info-section-title {
+            @apply text-2xl mt-2 text-[#F4EDED];
+        }
+        footer .info-section-list {
+            @apply flex flex-col gap-y-[3px] leading-5 text-[#F4EDED] text-[6px] lg:text-[13px] sm:text-[8px];
+        }
+        footer .newsletter-section {
+            @apply flex gap-y-[20px]
+        }
+        footer .newsletter-btn {
+            @apply border-x border-y rounded-md py-3 px-10 w-1/3 bg-[#F4EDED] ml-1 transition hover:bg-[#D2C9C9] hover:border-[#9F9E9E];
+        }
+        footer .newsletter-section input {
+            @apply border-x border-y border-[#F4EDED] rounded-md py-3 pr-32 pl-5 bg-transparent;
+        }
+        footer .newsletter-section form div:first-child {
+            @apply flex;
+        }
+
+        footer .social-media {
+            @apply flex items-center gap-2 ml-[-20px] px-16 leading-3 justify-center text-[#F4EDED] 
+        }
+        /* footer .newsletter-section form {
+            @apply px-8 ;
+        } */
+        footer .newsletter-section {
+            @apply flex justify-center mx-auto lg:mx-0 lg:order-1;
+        }
+
+        .main-text {
+            @apply lg:text-[13px] lg:px-[70px]
+        }
+
+        .main-title {
+            @apply flex justify-start text-[#4267B2] lg:text-[30px] lg:px-[70px]
+        }
+        
+
     </style>
 </head>
 <body>
-    <div class="relative bg-[#F4EDED] overflow-hidden">
-        <div class="max-w-7xl mx-auto">
-          <div class="relative z-10 pb-8 bg-[#F4EDED] sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+    <div class="flex flex-col gap-8 items-center lg:flex-row  w-full mx-auto">
     
-            <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-24 text-white transform translate-x-1/2" fill="#F4EDED" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-              <polygon points="50,0 100,0 50,100 0,100" />
-            </svg>
-            <div>
-              <div class="relative pt-6 px-4 sm:px-6 lg:px-8"></div>
-              <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"></div>
-            </div>
-      
-            <main class="mt-10 mx-auto max-w-6xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
     
-              <div class="sm:text-center lg:text-left text-center">
-                  <span class="text-[#4267B2] text-[24px] text-center">Grupa RYWAL-RHC</span>
-                  <span class="block text-[11px] ">
+              <div class="sm:text-center lg:text-left lg:w-full relative z-30">
+                  <span class="main-title">Grupa RYWAL-RHC</span>
+                  <p class="main-text">
                     Witamy na stronie Grupy RYWAL-RHC polskiego lidera rynku spawalniczego. Od niemal 25 lat specjalnością naszej oferty są materiały i urządzenia spawalnicze, a także materiały i akcesoria szlifierskie, osprzęt BHP oraz wiele innych towarów i urządzeń z dziedziny łączenia i cięcia przy wykorzystaniu ciepła.
     
                     Zajmujemy się produkcją urządzeń i materiałów pod własną marką MOST oraz dystrybucją sprzętu renomowanych marek, dzięki czemu mamy pewność, iż nasz asortyment wyróżnia się niezawodnością oraz wysoką klasą. Chętnie doradzimy Państwu, które materiały spawalnicze są odpowiednie, a także jakie spawarki powinny być zastosowane w konkretnym procesie. Jeśli interesuje Państwa profesjonalna spawarka, specjalistyczna chemia techniczna lub inny towar z branży spawalniczej i szlifierskiej, to zachęcamy do zapoznania się z naszymi propozycjami. Zachęcamy również posiadaczy spawarek oraz innego sprzętu związanego z procesem cięcia i spawania do korzystania z usług naszego serwisu.
@@ -49,40 +85,37 @@
                     Jesteśmy też mecenasem sztuki. Od kilku lat wspieramy twórczość Pani Anny Wysockiej, która ukończyła studia na Wydziale Sztuk Pięknych Uniwersytetu Mikołaja Kopernika w Toruniu w 1999 roku, a od 2013 jest doktorem habilitowanym w zakresie sztuk plastycznych. Obecnie pracuje jako adiunkt w Zakładzie Malarstwa na Wydziale Sztuk Pięknych UMK. Jest członkiem Związku Polskich Artystów Plastyków Okręgu Warszawskiego. Tworzy obrazy, obiekty, rzeźby i płaskorzeźby w technice własnej. 
                     
                     Zachęcamy wszystkich do zapoznania się z twórczością Pani Anny, gdyż stanowi ona ciekawe połączenie sztuki współczesnej z technologiami przemysłowymi. (www.annawysocka.com.pl).
-                  </span>
-                </h1>
+                  </p>
               </div>
-    
-            </main>
+              <div class="lg:w-10/12 relative">
+                <img class="relative"  src="img/main.svg" alt="">
+                <div class="bg-white h-[130%] w-[300px] rotate-[20deg] absolute top-1/2 -left-[150px] transform -translate-y-1/2 hidden lg:block"></div>
+              </div>
+             
+         
           </div>
-        </div>
-        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 bg-[#F4EDED]">
-          <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="img/main.svg" alt="">
-        </div>
-      </div>
-    <section class="h-[300px] bg-[#F4EDED] flex justify-between">
-        <div class="w-1/2 px-[20px] pt-[30px]">
-            <h1 class="text-[#4267B2] text-[28px] text-center mb-10">Największa sieć salonów spawalniczych</h1>
-            <p class="text-sm px-[50px]">
-                Grupa RYWAL-RHC tworzy <span class="font-bold">największą sieć Salonów Spawalniczych w Europie</span>, a w jej skład wchodzą polskie firmy z branż <br>przemysłowych RYWAL-RHC Sp. z o.o., INTEGRATOR RHC Sp. z o.o., Elkrem Sp. z o.o., Platforma Filtrowentylacyjna Sp. z o. o., Towimor S.A., a także podmioty zagraniczne: SOLIK SK na Słowacji, RYWAL-LT na Litwie, RIVAL-SVARKA na Białorusi, RYWAL-RU w Rosji, RME Middle East FZCO w Zjednoczonych Emiratach Arabskich oraz RYWAL-RHC Romania SRL.
-            </p>
-        </div>
-        <div class="w-1/2 pr-[10px] pt-[30px]">
-            <h1 class="text-[#4267B2] text-[28px] text-center mb-10">Wiedza poparta doświadczeniem</h1>
-            <div class="flex justify-between pl-[90px]">
-                <div class="w-[300px]">
-                    <p class="text-[#FF0000] mb-3">Doradztwo:</p>
-                    <p class="text-[15px] ">Zaufaj naszym doradcom handlowo-technicznym, a przygotujemy rozwiązania skrojone na miarę Twoich potrzeb.</p>
+          <!-- <section class="h-auto bg-[#F4EDED] flex flex-wrap shadow-xl pb-10 w-full"> -->
+            <section class="h-auto bg-[#F4EDED] flex flex-wrap shadow-xl pb-10 w-full relative z-50">
+                <div class="w-full lg:w-1/2 px-[40px] pt-[30px] min-w-[500px] mx-auto">
+                    <h1 class="text-[#4267B2] text-[28px] text-center">Największa sieć salonów spawalniczych</h1>
+                    <p class="text-sm text-center mx-auto w-fit mt-10">
+                        Grupa RYWAL-RHC tworzy <span class="font-bold">największą sieć Salonów Spawalniczych w Europie</span>, a w jej skład wchodzą polskie firmy z branż przemysłowych RYWAL-RHC Sp. z o.o., INTEGRATOR RHC Sp. z o.o., Elkrem Sp. z o.o., Platforma Filtrowentylacyjna Sp. z o. o., Towimor S.A., a także podmioty zagraniczne: SOLIK SK na Słowacji, RYWAL-LT na Litwie, RIVAL-SVARKA na Białorusi, RYWAL-RU w Rosji, RME Middle East FZCO w Zjednoczonych Emiratach Arabskich oraz RYWAL-RHC Romania SRL.
+                    </p>
                 </div>
-                <div class="w-[300px]">
-                    <p class="text-[#FF0000] mb-3">Vademecum spawalniczy:</p>
-                    <p class="text-[15px] ">Na naszej stronie znajdziesz kompendium wiedzy spawalniczej przygotowane przez naukowców oraz praktyków. Filmy instruktażowe i produktowe na własnym kanale filmowym na <span class="text-[#FF0000]">YouTube.</span></p>
+                <div class="w-full lg:w-1/2 pt-[30px] min-w-[500px] mx-auto">
+                    <h1 class="text-[#4267B2] text-[28px] text-center mb-10">Wiedza poparta doświadczeniem</h1>
+                    <div class="flex flex-wrap px-10 ">
+                        <div class=" w-1/2 px-2 ">
+                            <p class="text-[#FF0000] mb-3 font-semibold">Doradztwo:</p>
+                            <p class="text-[15px] ">Zaufaj naszym doradcom handlowo-technicznym, a przygotujemy rozwiązania skrojone na miarę Twoich potrzeb.</p>
+                        </div>
+                        <div class=" w-1/2 px-2">
+                            <p class="text-[#FF0000] mb-3 font-semibold">Vademecum spawalniczy:</p>
+                            <p class="text-[15px] ">Na naszej stronie znajdziesz kompendium wiedzy spawalniczej przygotowane przez naukowców oraz praktyków. Filmy instruktażowe i produktowe na własnym kanale filmowym na <span class="text-[#FF0000]">YouTube.</span></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-
-    </section>
+            </section>
 
     <div class="bg-fixed h-[300px]" style="background-image: url(/img/welder.jpg)"></div>
     <section class="bg-[#F4EDED] flex justify-between flex-wrap  ">
@@ -98,7 +131,7 @@
                 </div>
                 <div class="bg-[#4267B2] h-px w-0 sm:w-10 xl:w-20 mx-0 xl:mx-2 my-auto rounded invisible sm:visible "></div>
             </div>
-            <p class="text-sm mt-10 mx-auto px-4">
+            <p class>
                 <span class="flex mb-2">
                 Misją firmy „RYWAL – RHC” jest osiągnięcie pełnej satysfakcji Klienta poprzez specjalizowanie się w kompleksowej usłudze sprzedaży w całym obszarze procesów, w których ma miejsce łączenie i cięcie materiałów przy pomocy ciepła.
                 </span>
@@ -120,117 +153,126 @@
             <p class="text-2xl text-[#585755] min-w-[210px]">Pozostałe Serwisy</p>
             <div class="bg-[#585755] h-px w-60 xl:w-80 my-auto rounded invisible sm:w-40 sm:visible"></div>
         </div>
-
         <!-- KAFELKI -->
-
         <div class="md:mx-10 justify-evenly flex flex-wrap sm:px-5">
             <button class="kafelek" onclick=" window.open('https://odpylamy.pl/','_blank')">
-                <img src="img/pf.svg" class="w-[120px] mx-auto mt-8">
-                <div class="mt-6 w-clip mx-5 text-center">
+                <img src="img/pf.svg" class="w-[80px] sm:w-[100px] sm:mt-5 lg:w-[120px] mx-auto mt-2 md:mt-6 xl:mt-0 xl:w-[140px] ">
+                <div class="mt-9 mx-5 text-center invisible xl:visible ">
                     <span>Platforma Filtracyjna</span>
                 </div>
             </button>
             <button class="kafelek" onclick=" window.open('http://www.xiris.pl/','_blank')">
-                <img src="img/xiris.png" class="m-auto">
-                <div class="w-clip mx-5 text-center">
+                <img src="img/xiris.png" class="w-[80px] sm:w-[100px] sm:mt-5 lg:w-[120px] mx-auto mt-2 md:mt-5 xl:w-[160px] xl-mt-1">
+                <div class="w-clip mx-5 text-center invisible xl:visible ">
                     <span>Kamery Spawalnicze</span>
                 </div>
             </button>
             <button class="kafelek" onclick=" window.open('http://www.gullco.pl/','_blank')">
                 <img src="img/gullco.png" class="mx-auto">
-                <div class="w-clip mx-5 text-center">
+                <div class="w-clip mx-5 text-center invisible xl:visible ">
                     <span>Systemy do spawania zautomatyzowanego</span>
                 </div>
             </button>
-            <button class="kafelek" onclick=" window.open('http://www.podnoszenie.eu/','_blank')">
+            <button class="kafelek px-2 lg:px-0" onclick=" window.open('http://www.podnoszenie.eu/','_blank')">
                 <img src="img/podnoszenie.png" class="mx-auto">
-                <div class="w-clip mx-5 text-center">
+                <div class="w-clip mx-5 text-center invisible xl:visible ">
                     <span>Systemy transportu
                         bliskiego</span>
                 </div>
             </button>
             <button class="kafelek" onclick=" window.open('http://www.elkrem.com.pl/','_blank')">
-                <img src="img/elkrem.png" class="mx-auto ">
-                <div class="w-clip mx-5 text-center">
+                <img src="img/elkrem.png" class="mx-auto px-2 md:px-0 mt-2">
+                <div class="w-clip mx-5 text-center invisible xl:visible ">
                     <span>Układy plastyfikujące oraz obróbka CNC</span>
                 </div>
             </button>
             <button class="kafelek" onclick=" window.open('https://www.matyergonomiczne.pl/','_blank')">
                 <img src="img/wearwell.png" class="mx-auto">
-                <div class="w-clip mx-5 text-center">
-                    <span>Platforma Filtracyjna</span>
+                <div class="w-clip mx-2 text-center invisible xl:visible">
+                    <span>Ergonomiczne, antyzmęczeniowe maty przemysłowe.</span>
                 </div>
             </button>
             <button class="kafelek" onclick=" window.open('https://szlifowanie.info/','_blank')">
-                <img src="img/suhner.png" class="mx-auto">
-                <div class="w-clip mx-5 text-center">
+                <img src="img/suhner.png" class="mx-auto px-2 mt-2">
+                <div class="w-clip mx-5 text-center invisible xl:visible ">
                     <span>Platforma Filtracyjna</span>
                 </div>
             </button>
             <button class="kafelek" onclick=" window.open('http://www.readytorobot.eu/','_blank')">
-                <img src="img/interator.png" class="mx-auto w-180 mt-[50px] ">
-                <div class="mt-[50px] w-clip mx-5 text-center">
+                <img src="img/interator.png" class="mx-auto w-180 mt-[50px] px-2">
+                <div class="mt-[50px] w-clip mx-5 text-center invisible xl:visible ">
                     <span>Platforma Filtracyjna</span>
                 </div>
             </button>
         </div>
     </div>
 
-    <footer class="bg-[#585755] h-80 ">
-        <div class="flex"> 
-            <div class="mx-auto">
-                <h1 class="text-xl my-5 font-thin text-[#F4EDED]">INFORMACJE</h1>
-                <ul class="font-thin flex flex-col gap-y-1 text-[#F4EDED] text-sm">
-                    <a href="#"><li>Grupa Rywal-RHC</li></a>
-                    <a href="#"><li>Partnerzy</li></a>
-                    <a href="#"><li>Dane Rejestrowe</li></a>
-                    <a href="#"><li>Polityka Prywatności</li></a>
-                    <a href="#"><li>Polityka Cookies</li></a>
-                    <a href="#"><li>Nota Prawna</li></a>
-                    <a href="#"><li>Informacje Dla Gości</li></a>
-                    <a href="#"><li>Kontakt</li></a>
-                    <a href="#"><li>Strategia Podatkowa<br>Rywal-RHC</li></a>
-                </ul>
-            </div>
-            <div class="pt-8">
-                <div class="bg-[#F4EDED] w-px h-64"><hr></div>
-            </div>
-            <div class="mx-16">
+    <footer >
+        <div class="footer-content-container">
+        <section class="newsletter-section">
+            <form>
+                <div class="">
+                    <input type="email" placeholder="Wpisz swój e-mail" class="">
+                    <button type="submit" class="newsletter-btn">DOŁĄCZ</button>
+                </div>
                 <div>
-                    <h1 class="text-xl mt-7 mb-3 font-thin text-[#F4EDED] tracking-wide font-inter">SKRÓTY</h1>
-                    <ul class="font-thin  text-[#F4EDED] text-sm my-0.5">
-                        <a href="#"><li>Promocje</li></a>
-                        <a href="#"><li>Okazje Cenowe</li></a>
-                        <a href="#"><li>Dzierżawa Urządzeń</li></a>
-                        <a href="#"><li>Serwis</li></a>
-                        <a href="#"><li>Produkty MOST</li></a>
-                        <a href="#"><li>FAQ</li></a>
-                        <a href="#"><li>Mapa Strony</li></a>
-                    </ul>
-                </div>
-            </div>
-            <div class="my-24">
-                <form>
-                    <input type="email" placeholder="Wpisz swój e-mail" class="border-x border-y border-[#F4EDED] rounded-md py-3 pr-32 pl-5 bg-transparent">
-                    <button type="submit" class="border-x border-y rounded-md py-3 w-32 bg-[#F4EDED] ml-1 transition hover:bg-[#D2C9C9] hover:border-[#9F9E9E]">DOŁĄCZ</button><br />
-                    <input type="checkbox" name="checkbox" id="checkbox" class="mt-4">
+                    <input type="checkbox" name="checkbox" id="checkbox">
                     <label class="text-[10px] font-thin text-[#F4EDED] font-thin">*Wyrażam zgodę na otrzymyanie newslettera od sklepu poprzez e-mail</label>
-                </form>
-                <div class="flex mt-28 text-[#F4EDED] font-thin text-xs">
-                    <span>© COPYRIGHT 2016: RYWAL-RHC SP. Z O.O.</span>
                 </div>
-            </div>
-            <div class="w-[380px] h-80">
+                <div class="social-media">
+                    <a href="https://www.youtube.com/user/rywalrhc"><img src="img/youtube.png" alt="" class="w-[20px] h-[20] my-auto"></a>
+                    <a href="https://www.youtube.com/user/rywalrhc"><img src="img/instagram.png" alt="" class="w-[20px] h-[20] my-auto"></a>
+                    <a href="https://www.youtube.com/user/rywalrhc"><img src="img/facebook.png" alt="" class="w-[20px] h-[20] my-auto"></a>
+                    <span class="text-[#F4EDED]">@ Rywal_RHC</span>
+                </div>
+            </form>
+        </section>
+        <section class="info-section">
+      <div>
+        <h1 class="info-section-title">INFORMACJE</h1>
+        <ul class="info-section-list">
+            <li><a href="#">Grupa Rywal-RHC</a></li>
+            <li><a href="#">Partnerzy</a></li>
+            <li><a href="#">Dane Rejestrowe</a></li>
+            <li><a href="#">Polityka Prywatności</a></li>
+            <li><a href="#">Polityka Cookies</a></li>
+            <li><a href="#">Nota Prawna</a></li>
+            <li><a href="#">Informacje Dla Gości</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Strategia Podatkowa<br>Rywal-RHC</a></li>
+        </ul>
+      </div>
+         <div class="">
+                <h1 class="info-section-title">SKRÓTY</h1>
+                <ul class="info-section-list">
+                    <li><a href="#">Promocje</a></li>
+                    <li><a href="#">Okazje Cenowe</a></li>
+                    <li><a href="#">DZIERŻAWA URZĄDZEŃ</a></li>
+                    <li><a href="#">Serwis</a></li>
+                    <li><a href="#">Produkty Most</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Mapa Strony</a></li>
+                </ul>
+            </div> 
+        </section>
+    </div>
+   
+     
+                
+
+            <!-- <div class="w-[380px] h-80">
                 <img src="img/image.svg" alt="" class="w-[180px] h-[180px] m-10 ml-24">
                 <div class="flex items-center gap-2 ml-[-20px] px-16 leading-3">
                     <a href="https://www.youtube.com/user/rywalrhc"><img src="img/youtube.png" alt="" class="w-[20px] h-[20] my-auto"></a>
                     <a href="https://www.youtube.com/user/rywalrhc"><img src="img/instagram.png" alt="" class="w-[20px] h-[20] my-auto"></a>
                     <a href="https://www.youtube.com/user/rywalrhc"><img src="img/facebook.png" alt="" class="w-[20px] h-[20] my-auto"></a>
                     <span class="text-[#F4EDED]">@ Rywal_RHC</span>
+                    <span>© COPYRIGHT 2016: RYWAL-RHC SP. Z O.O.</span>
+
                 </div>
-            </div>
+            </div> -->
             
-        </div>          
+                
     </footer>
 </body>
 </html> 
