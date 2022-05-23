@@ -22,41 +22,35 @@
         .kafelek {
             @apply w-[100px] sm:w-[150px] lg:w-[200px] xl:w-[250px] h-[100px] sm:h-[150px] lg:h-[200px] xl:h-[250px] bg-white rounded-lg shadow-xl mx-1 sm:mx-3 mt-10 min-w-[250-px] min-h-[250-px] md:mx-6 lg:mx-7 xl:mx-8 transition ease-in-out duration-500 hover:-translate-y-1 hover:scale-110;
         }
+        
         footer {
-            @apply bg-[#585755] flex flex-col lg:flex-row sm:flex-row gap-y-10 py-5 justify-center;
+            @apply bg-[#585755] flex flex-col lg:flex-row gap-y-10 my-1 px-10 justify-center;
         }
         footer .footer-content-container {
-            @apply mx-auto justify-center flex flex-col lg:flex-row lg:gap-x-[150px]
+            @apply justify-center flex flex-col lg:flex-row lg:gap-x-[100px] md:flex-row
         }
         footer .info-section {
-            @apply flex justify-center gap-x-[40px] lg:gap-x-[125px] 
+            @apply flex justify-center gap-x-[30px] sm:gap-x-[50px] lg:gap-x-[125px] py-[10px] mx-10 
         }
         footer .info-section-title {
-            @apply text-[12px] mt-2 text-[#F4EDED] md:text-[18px] lg:text-[25px]
+            @apply text-[12px] text-[#F4EDED] md:text-[20px] lg:text-[25px]
         }
         footer .info-section-list {
             @apply flex flex-col leading-5 text-[#F4EDED] text-[8px] md:text-[12px] lg:text-[13px] 
         }
         footer .newsletter-section {
-            @apply flex gap-y-[10px] justify-center
+            @apply flex gap-y-[10px] flex-col justify-center w-full lg:py-16 lg:flex-row
         }
         footer .newsletter-btn {
-            @apply border-x border-y rounded-md py-2 items-center w-[80px] text-[13px] bg-[#F4EDED] ml-[5px] transition hover:bg-[#D2C9C9] hover:border-[#9F9E9E] sm:w-[130px] sm:text-[12px]
+            @apply border-x border-y rounded-md py-2 items-center text-[8px] bg-[#F4EDED] transition hover:bg-[#D2C9C9] hover:border-[#9F9E9E] px-[10px] sm:text-[12px]
         }
         footer .newsletter-section input {
-            @apply border-x border-y border-[#F4EDED] rounded-md py-3 pl-[20px] bg-transparent text-[12px] sm:px-[50px]
+            @apply border-x border-y border-[#F4EDED] rounded-md py-2 bg-transparent text-[8px] px-[20px] sm:px-[100px] lg:px-[70px] sm:text-[12px]
         }
         footer .newsletter-section form div:first-child {
             @apply flex mt-3
         }
 
-        footer .social-media {
-            @apply flex items-center gap-2 leading-3  text-[#F4EDED] pt-[30px] w-2/3 mx-auto sm:flex gap-y-[20px] justify-center
-        }
-
-        footer .social-media span {
-            @apply text-[12px]
-        }
         footer .newsletter-section form {
             @apply px-8;
         }
@@ -72,11 +66,7 @@
         .main-title {
             @apply flex justify-start text-[#4267B2] lg:text-[30px] lg:px-[70px]
         }
-
-        footer .copyright {
-            @apply lg:justify-start pt-[25px] text-[#F4EDED] flex justify-center text-[10.5px] md:text-[12px] lg:pt-[60px]
-        }
-
+        
     </style>
 </head>
 <body>
@@ -160,117 +150,123 @@
             <div class="bg-[#585755] h-px w-60 xl:w-80 my-auto rounded invisible sm:w-40 sm:visible"></div>
         </div>
         <!-- KAFELKI -->
-        <div class="md:mx-10 justify-evenly flex flex-wrap sm:px-5">
-            <button class="kafelek" onclick=" window.open('https://odpylamy.pl/','_blank')">
-                <img src="img/pf.svg" class="w-[80px] sm:w-[100px] sm:mt-5 lg:w-[120px] mx-auto mt-2 md:mt-6 xl:mt-0 xl:w-[140px] ">
-                <div class="mt-9 mx-5 text-center invisible xl:visible ">
-                    <span>Platforma Filtracyjna</span>
-                </div>
-            </button>
-            <button class="kafelek" onclick=" window.open('http://www.xiris.pl/','_blank')">
-                <img src="img/xiris.png" class="w-[80px] sm:w-[100px] sm:mt-5 lg:w-[120px] mx-auto mt-2 md:mt-5 xl:w-[160px] xl-mt-1">
-                <div class="w-clip mx-5 text-center invisible xl:visible ">
-                    <span>Kamery Spawalnicze</span>
-                </div>
-            </button>
-            <button class="kafelek" onclick=" window.open('http://www.gullco.pl/','_blank')">
-                <img src="img/gullco.png" class="mx-auto">
-                <div class="w-clip mx-5 text-center invisible xl:visible ">
-                    <span>Systemy do spawania zautomatyzowanego</span>
-                </div>
-            </button>
-            <button class="kafelek px-2 lg:px-0" onclick=" window.open('http://www.podnoszenie.eu/','_blank')">
-                <img src="img/podnoszenie.png" class="mx-auto">
-                <div class="w-clip mx-5 text-center invisible xl:visible ">
-                    <span>Systemy transportu
-                        bliskiego</span>
-                </div>
-            </button>
-            <button class="kafelek" onclick=" window.open('http://www.elkrem.com.pl/','_blank')">
-                <img src="img/elkrem.png" class="mx-auto px-2 md:px-0 mt-2">
-                <div class="w-clip mx-5 text-center invisible xl:visible ">
-                    <span>Układy plastyfikujące oraz obróbka CNC</span>
-                </div>
-            </button>
-            <button class="kafelek" onclick=" window.open('https://www.matyergonomiczne.pl/','_blank')">
-                <img src="img/wearwell.png" class="mx-auto">
-                <div class="w-clip mx-2 text-center invisible xl:visible">
-                    <span>Ergonomiczne, antyzmęczeniowe maty przemysłowe.</span>
-                </div>
-            </button>
-            <button class="kafelek" onclick=" window.open('https://szlifowanie.info/','_blank')">
-                <img src="img/suhner.png" class="mx-auto px-2 mt-2">
-                <div class="w-clip mx-5 text-center invisible xl:visible ">
-                    <span>Platforma Filtracyjna</span>
-                </div>
-            </button>
-            <button class="kafelek" onclick=" window.open('http://www.readytorobot.eu/','_blank')">
-                <img src="img/interator.png" class="mx-auto w-180 mt-[50px] px-2">
-                <div class="mt-[50px] w-clip mx-5 text-center invisible xl:visible ">
-                    <span>Platforma Filtracyjna</span>
-                </div>
-            </button>
+        <div class="">
+            <div class=" flex justify-evenly flex-wrap sm:flex-nowrap ">
+                <button class="kafelek" onclick=" window.open('https://odpylamy.pl/','_blank')">
+                    <img src="img/pf.svg" class="w-[80px] sm:w-[100px] sm:mt-5 lg:w-[120px] mx-auto mt-2 md:mt-6 xl:mt-0 xl:w-[140px] ">
+                    <div class="mt-9 mx-5 text-center invisible xl:visible ">
+                        <span>Platforma Filtracyjna</span>
+                    </div>
+                </button>
+                <button class="kafelek" onclick=" window.open('http://www.xiris.pl/','_blank')">
+                    <img src="img/xiris.png" class="w-[80px] sm:w-[100px] sm:mt-5 lg:w-[120px] mx-auto mt-2 md:mt-5 xl:w-[160px] xl-mt-1">
+                    <div class="w-clip mx-5 text-center invisible xl:visible ">
+                        <span>Kamery Spawalnicze</span>
+                    </div>
+                </button>
+                <button class="kafelek" onclick=" window.open('http://www.gullco.pl/','_blank')">
+                    <img src="img/gullco.png" class="mx-auto">
+                    <div class="w-clip mx-5 text-center invisible xl:visible ">
+                        <span>Systemy do spawania zautomatyzowanego</span>
+                    </div>
+                </button>
+                <button class="kafelek px-2 lg:px-0" onclick=" window.open('http://www.podnoszenie.eu/','_blank')">
+                    <img src="img/podnoszenie.png" class="mx-auto">
+                    <div class="w-clip mx-5 text-center invisible xl:visible ">
+                        <span>Systemy transportu
+                            bliskiego</span>
+                    </div>
+                </button>
+            </div>
+            <div class=" flex justify-evenly flex-wrap sm:flex-nowrap mb-10">
+                <button class="kafelek" onclick=" window.open('http://www.elkrem.com.pl/','_blank')">
+                    <img src="img/elkrem.png" class="mx-auto px-2 md:px-0 mt-2">
+                    <div class="w-clip mx-5 text-center invisible xl:visible ">
+                        <span>Układy plastyfikujące oraz obróbka CNC</span>
+                    </div>
+                </button>
+                <button class="kafelek" onclick=" window.open('https://www.matyergonomiczne.pl/','_blank')">
+                    <img src="img/wearwell.png" class="mx-auto">
+                    <div class="w-clip mx-2 text-center invisible xl:visible">
+                        <span>Ergonomiczne, antyzmęczeniowe maty przemysłowe.</span>
+                    </div>
+                </button>
+                <button class="kafelek" onclick=" window.open('https://szlifowanie.info/','_blank')">
+                    <img src="img/suhner.png" class="mx-auto px-2 mt-2">
+                    <div class="w-clip mx-5 text-center invisible xl:visible ">
+                        <span>Platforma Filtracyjna</span>
+                    </div>
+                </button>
+                <button class="kafelek" onclick=" window.open('http://www.readytorobot.eu/','_blank')">
+                    <img src="img/interator.png" class="mx-auto w-180 mt-[50px] px-2">
+                    <div class="mt-[50px] w-clip mx-5 text-center invisible xl:visible ">
+                        <span>Platforma Filtracyjna</span>
+                    </div>
+                </button>
+            </div>
         </div>
-    </div>
 
-    <footer>
-        <div class="footer-content-container">
-        <section class="newsletter-section">
-            <form>
-                <div class="">
-                    <input type="email" placeholder="Wpisz swój e-mail" class="">
-                    <button type="submit" class="newsletter-btn">DOŁĄCZ</button>
+        <footer>
+    
+            <div class="footer-content-container">
+            <section class="newsletter-section">
+                <form>
+                    <div class="flex justify-center mt-[10px] space-x-1 py-[5px]">
+                        <input type="email" placeholder="Wpisz swój e-mail" class="">
+                        <button type="submit" class="newsletter-btn">Dołącz</button>
+                    </div>
+                    <div class="flex justify-center mt-[10px] space-x-1 py-[2px]">
+                        <input type="checkbox" name="checkbox" id="checkbox" class="">
+                        <label class="text-[7px] text-[#F4EDED] lg:text-[10px] ">*Wyrażam zgodę na otrzymyanie newslettera od sklepu poprzez e-mail</label>
+                    </div>
+                </form>
+                <div class="min-w-[100px] max-w-[100px] m-auto">
+                    <div class="flex justify-center">
+                        <a href="index.html"><img src="img/image.svg" alt="" class="flex justify-center items-center w-[70px] h-[70px]"></a>
+                    </div>
+                        <section class="flex flex-row justify-between py-[50px]">
+                            <a href="https://www.youtube.com/user/rywalrhc" target="_blank"><img src="img/youtube3.svg" alt="" class="w-[20px] h-[20px] lg:w-[25px] lg:h-[25px] "></a>
+                            <a href="https://www.youtube.com/user/rywalrhc" target="_blank"><img src="img/instagram3.svg" alt="" class="w-[20px] h-[20px] lg:w-[25px] lg:h-[25px]"></a>
+                            <a href="https://www.youtube.com/user/rywalrhc"target="_blank"><img src="img/facebook3.svg" alt="" class="w-[20px] h-[20px] lg:w-[25px] lg:h-[25px]"></a>
+                        </section>
+                        
                 </div>
-                <div class="flex items-center mt-[10px] space-x-1">
-                    <input type="checkbox" name="checkbox" id="checkbox " class="">
-                    <label class="text-[8px] text-[#F4EDED] md:text-[11px]">*Wyrażam zgodę na otrzymyanie newslettera od sklepu poprzez e-mail</label>
+            </section>
+            <section class="info-section">
+                
+                <div>
+                  <h1 class="info-section-title">INFORMACJE</h1>
+                  <ul class="info-section-list">
+                      <li><a href="#">Grupa Rywal-RHC</a></li>
+                      <li><a href="#">Partnerzy</a></li>
+                      <li><a href="#">Dane Rejestrowe</a></li>
+                      <li><a href="#">Polityka Prywatności</a></li>
+                      <li><a href="#">Polityka Cookies</a></li>
+                      <li><a href="#">Nota Prawna</a></li>
+                      <li><a href="#">Informacje Dla Gości</a></li>
+                      <li><a href="#">Kontakt</a></li>
+                      <li><a href="#">Strategia Podatkowa<br>Rywal-RHC</a></li>
+                  </ul>
                 </div>
-                <div class="copyright">
-                    <span>© COPYRIGHT 2016: RYWAL-RHC SP. Z O.O.</span>
-                </div>
-            </form>
-        </section>
-        <section class="info-section">
-      <div>
-        <h1 class="info-section-title">INFORMACJE</h1>
-        <ul class="info-section-list">
-            <li><a href="#">Grupa Rywal-RHC</a></li>
-            <li><a href="#">Partnerzy</a></li>
-            <li><a href="#">Dane Rejestrowe</a></li>
-            <li><a href="#">Polityka Prywatności</a></li>
-            <li><a href="#">Polityka Cookies</a></li>
-            <li><a href="#">Nota Prawna</a></li>
-            <li><a href="#">Informacje Dla Gości</a></li>
-            <li><a href="#">Kontakt</a></li>
-            <li><a href="#">Strategia Podatkowa<br>Rywal-RHC</a></li>
-        </ul>
-      </div>
-         <div class="">
-                <h1 class="info-section-title">SKRÓTY</h1>
-                <ul class="info-section-list">
-                    <li><a href="#">Promocje</a></li>
-                    <li><a href="#">Okazje Cenowe</a></li>
-                    <li><a href="#">DZIERŻAWA URZĄDZEŃ</a></li>
-                    <li><a href="#">Serwis</a></li>
-                    <li><a href="#">Produkty Most</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Mapa Strony</a></li>
-                </ul>
-            </div> 
-        </section>
-        </div>
-        <div>
-        </div>
-        <section class="flex flex-row mt-[20px] justify-between w-1/5 m-auto lg:w-1/12 md:w-1/6">
-            <a href="https://www.youtube.com/user/rywalrhc"><img src="img/youtube3.svg" alt="" class="w-[10px] h-[10px] lg:w-[25px] lg:h-[25px] "></a>
-            <a href="https://www.youtube.com/user/rywalrhc"><img src="img/instagram3.svg" alt="" class="w-[10px] h-[10px] lg:w-[25px] lg:h-[25px]"></a>
-            <a href="https://www.youtube.com/user/rywalrhc"><img src="img/facebook3.svg" alt="" class="w-[10px] h-[10px] lg:w-[25px] lg:h-[25px]"></a>
+                   <div class="">
+                          <h1 class="info-section-title">SKRÓTY</h1>
+                          <ul class="info-section-list">
+                              <li><a href="#">Promocje</a></li>
+                              <li><a href="#">Okazje Cenowe</a></li>
+                              <li><a href="#">Dzierżawa Urządzeń</a></li>
+                              <li><a href="#">Serwis</a></li>
+                              <li><a href="#">Produkty Most</a></li>
+                              <li><a href="#">FAQ</a></li>
+                              <li><a href="#">Mapa Strony</a></li>
+                          </ul>
+                      </div> 
+                  </section>
+            </div>
             
-        </section>
-        <!-- <div class="flex ">
-            <span><a href="index.html"><img src="img/image.svg" alt="" class="flex justify-center items-center w-[70px] h-[70px]"></a></span>
-        </div> -->
-    </footer>
+        </footer>
+        <div class="w-full text-center text-[#F4EDED] bg-[#585755] text-[8px] p-2 lg:text-[12px]">
+            <span>© COPYRIGHT 2016: RYWAL-RHC SP. Z O.O.</span>
+        </div>
 </body>
 </html> 
 
